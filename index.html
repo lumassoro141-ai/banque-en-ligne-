@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>EuroBank </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏦 EuroBank</h1>
+
+    <div class="balance-card">
+        <h2>Solde actuel</h2>
+        <p id="balance">100000 €</p>
+    </div>
+
+    <div class="form-section">
+        <input type="number" id="amount" placeholder="Montant (€)">
+        
+        <select id="category">
+            <option value="Epargne">Fonds d'épargne</option>
+            <option value="Facture">Facture</option>
+            <option value="Dette">Dette</option>
+        </select>
+
+        <div class="buttons">
+            <button class="deposit" onclick="deposit()">Dépôt</button>
+            <button class="withdraw" onclick="withdraw()">Retrait</button>
+        </div>
+    </div>
+
+    <div class="history">
+        <h3>Historique des transactions</h3>
+        <ul id="transaction-list"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
