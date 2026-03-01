@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #87CEEB; /* Bleu ciel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.balance-card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#balance {
+    font-size: 28px;
+    font-weight: bold;
+    color: green;
+}
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.deposit {
+    background-color: #28a745;
+    color: white;
+}
+
+.withdraw {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.history {
+    margin-top: 20px;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
